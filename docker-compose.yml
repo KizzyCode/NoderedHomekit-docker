@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  nodered-homekit:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    
+    # Mount the persistent data volume
+    volumes:
+      - ./mount:/data:rw
+    
+    # Define the docker context
+    environment:
+      HOSTNAME: my-hostname-to-announce-via-mdns
+      PORT: 80 # my-http-port-to-announce-via-mdns

@@ -1,0 +1,6 @@
+# Ignore macOS clutter
+.DS_Store
+
+# 
+/mount/*
+!/mount/.gitkeep
