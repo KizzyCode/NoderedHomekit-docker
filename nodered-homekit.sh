@@ -30,7 +30,6 @@ avahi-daemon --no-chroot -f /etc/avahi/avahi-daemon.conf &
 disown
 
 
-# Set permissions and start NodeRED
-chown 1000:1000 /usr/src/node-red
+# Start NodeRED
 cd /usr/src/node-red
 node-red npm start -- --userDir /data
