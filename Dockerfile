@@ -6,7 +6,8 @@ RUN npm config set cache /usr/src/node-red/.npm --global \
     && npm install --unsafe-perm --no-update-notifier --only=production node-red-contrib-homekit-bridged \
     && npm install --unsafe-perm --no-update-notifier --only=production @node-red-contrib-themes/midnight-red \
     && npm install --unsafe-perm https://github.com/KizzyCode/zigbee2homekit-nodered.git \
-    && npm install --unsafe-perm https://github.com/KizzyCode/tasmota2homekit-nodered.git
+    && npm install --unsafe-perm https://github.com/KizzyCode/tasmota2homekit-nodered.git \
+    && npm install --unsafe-perm https://github.com/KizzyCode/wsled2homekit-nodered.git
 COPY ./nodered-homekit.sh /sbin/nodered-homekit
 
 ENTRYPOINT []
