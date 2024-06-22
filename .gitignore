@@ -1,6 +1,6 @@
 # Ignore macOS clutter
 .DS_Store
 
-# 
+# Example mount dir
 /mount/*
 !/mount/.gitkeep
